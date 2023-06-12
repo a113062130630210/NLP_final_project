@@ -35,7 +35,8 @@ if __name__ == '__main__':
     ans = pd.read_csv("COS_Sample.csv")
     train_data = pd.read_csv("COS_train.csv")
     
-    say_target()
+    #say_target();
+    '''
     for i in range (20):
         if (i % 10 == 0):
             print(i)
@@ -43,8 +44,8 @@ if __name__ == '__main__':
             #if (train_data.loc[i,"sentence"].count(".")>= 19):
         index = random.randint(0,train_data.shape[0]-1)
         training(train_data.loc[index,"sentence"], train_data.loc[index,"label_for_kaggle"])
-    
-    say_target2()
+    '''
+    #say_target2();
     for i in range (100):
         if (i % 10 == 0):
             print(i)
